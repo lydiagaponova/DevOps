@@ -12,5 +12,5 @@ linear_regression = a*x + b
 plt.xlabel('X’)
 plt.ylabel('Y')
 plt.scatter(x, y)
-plt.plot(x, linear_regression, color='blue')
+
 
