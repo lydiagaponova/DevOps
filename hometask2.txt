@@ -8,5 +8,5 @@ def angle(x, y):
     mx = x - x.mean()
     my = y - y.mean()
     return sum(mx * my) / sum(mx**2)
-linear_regression = a*x + b
+
 
