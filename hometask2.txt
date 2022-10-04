@@ -1,0 +1,15 @@
+import numpy as np
+import matplotlib.pyplot as plt
+DataFrame=pd.read_excel("input.xlsx")
+x = DataFrame[[’X’]].values
+y = DataFrame[’Y’].values
+a, b = coefficient(x, y)
+def angle(x, y):
+    mx = x - x.mean()
+    my = y - y.mean()
+    return sum(mx * my) / sum(mx**2)
+linear_regression = a*x + b
+plt.xlabel('X’)
+plt.ylabel('Y')
+plt.scatter(x, y)
+plt.plot(x, linear_regression, color='blue')
