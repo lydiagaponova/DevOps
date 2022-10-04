@@ -1,0 +1,4 @@
+import numpy as np
+import matplotlib.pyplot as plt
+DataFrame=pd.read_excel("input.xlsx")
+Дописать программу 
